@@ -1,0 +1,159 @@
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.addBtn,
+.saveBtn,
+.editBtn,
+.deleteBtn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn {
+  background: #4caf50;
+  color: white;
+}
+
+.saveBtn {
+  background: #2196f3;
+  color: white;
+}
+
+.editBtn {
+  background: #ffc107;
+  margin-right: 5px;
+}
+
+.deleteBtn {
+  background: #f44336;
+  color: white;
+}
+
+.addBtn:hover {
+  background: #45a049;
+}
+
+.saveBtn:hover {
+  background: #1976d2;
+}
+
+.editBtn:hover {
+  background: #e0a800;
+}
+
+.deleteBtn:hover {
+  background: #d32f2f;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+}
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    padding:30px;
+  }
+
+  .form {
+    flex-direction: column;
+     padding:20px;
+  }
+  
+
+  .input {
+    width: 100%;
+  }
+
+  .addBtn,
+  .saveBtn {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .card div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    flex: 1;
+  }
+}

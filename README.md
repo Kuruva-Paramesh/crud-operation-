@@ -1,4 +1,4 @@
-CRUD Operations Theory (React Only)
+CRUD Operations Theory 
 
 CRUD stands for Create, Read, Update, Delete — the four basic operations for managing data. In a React-only project, CRUD is handled entirely on the frontend using state management (useState or useReducer) and optionally localStorage for persistence.
 

@@ -1,16 +1,41 @@
-# React + Vite
+CRUD Operations Theory (React Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CRUD stands for Create, Read, Update, Delete — the four basic operations for managing data. In a React-only project, CRUD is handled entirely on the frontend using state management (useState or useReducer) and optionally localStorage for persistence.
 
-Currently, two official plugins are available:
+1. Create
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Adds new data to the application state.
 
-## React Compiler
+Example: Adding a new user to a list.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Implemented by updating the state array with a new item.
 
-## Expanding the ESLint configuration
+2. Read
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Retrieves and displays data from the application state.
+
+Example: Showing a list of users in a table or card view.
+
+Implemented by mapping through the state array and rendering components.
+
+3. Update
+
+Modifies existing data in the state.
+
+Example: Editing a user's name or details.
+
+Implemented by updating the specific item in the state array using map().
+
+4. Delete
+
+Removes data from the state.
+
+Example: Deleting a user from the list.
+
+Implemented by filtering out the specific item from the state array.
+
+Frontend Persistence (Optional)
+
+Use localStorage to save state across page reloads.
+
+Example: Saving and retrieving the list of users in localStorage.
